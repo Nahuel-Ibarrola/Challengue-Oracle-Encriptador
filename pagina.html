@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="imagenes/lupa.png" type="image/x-icon">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Encripador</title>
+    </head>
+
+    <body>
+        <header>
+                <img class="logo" src="imagenes/Logo.png" alt="logo">
+        </header> 
+        <main>
+            <section class="primer-bloque">
+                <div class="contenedor-primer-texto">
+                    <textarea id="texto-area"  class="input-texto" placeholder="Ingrese el texto"></textarea>
+                </div>
+            </section>
+            <div class="alerta">
+                <img src="imagenes/bi_exclamation-circle-fill.png" alt="logo-alerta" id="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+
+            </div>
+
+            <section class="botones">
+                <div class="cajaBotones">
+                    <button onclick="encriptar();" class="botonEncriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="output">
+                <div class="imagen-output">
+                    <img src="imagenes/Muñeco.png" alt="muñeco">
+                </div>
+                <div class="contendor-texto-output">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contendor-botonCopiar">
+                    <input type="button" class="botonCopiar" value="copiar">
+                    <div id="mensaje-copiado">Texto copiado correctamente!</div>
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="resultado"></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p> &copy Copyright Nahuel Ibarrola-2024</p>
+        </footer>
+
+        
+        <script src="app.js" defer></script>
+    </body>
+</html>

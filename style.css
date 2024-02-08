@@ -146,6 +146,7 @@ body{
     width: 350px;
     padding: 0;
     margin-left: 25px;
+    overflow: auto;
     
 }
 .resultado{
@@ -339,12 +340,14 @@ body{
         margin-left: 25px;
         gap: 32px;
         
+        
     }
     .resultado{
         font-weight: 400;
         font-size: 24px;
         line-height: 36px;
         color: #495057;
+        margin: 0.5em;
     }
     .ocultar{
         display: none;
@@ -519,6 +522,7 @@ body{
         font-size: 24px;
         line-height: 36px;
         color: #495057;
+        margin: 0.5em;
     }
     .ocultar{
         display: none;

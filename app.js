@@ -5,6 +5,7 @@ let contenedor=document.querySelector(".contendor-texto-output");
 let textoResultado=document.querySelector(".resultado");
 let botonCopiar=document.querySelector(".botonCopiar");
 let seccion = document.querySelector(".output");
+let seccionResultado=document.querySelector(".contenedor-resultado");
 let vecesInteraccion=1;
 
 function encriptar(){
@@ -43,6 +44,11 @@ function encriptar(){
             let heightActual = seccion.offsetHeight;
             let nuevoHeight = heightActual + 240;
             seccion.style.height = nuevoHeight + 'px';
+
+            let heightActualResultado= seccionResultado.offsetHeight;
+            let nuevoHeightResultado= heightActualResultado + 175;
+            seccionResultado.style.height= nuevoHeightResultado + 'px';
+
             vecesInteraccion++;
         }
     }  
@@ -89,8 +95,14 @@ function desencriptar(){
             let heightActual = seccion.offsetHeight;
             let nuevoHeight = heightActual + 240;
             seccion.style.height = nuevoHeight + 'px';
+
+            let heightActualResultado= seccionResultado.offsetHeight;
+            let nuevoHeightResultado= heightActualResultado + 175;
+            seccionResultado.style.height= nuevoHeightResultado + 'px';
+
             vecesInteraccion++;
         }
+
     }
 
 

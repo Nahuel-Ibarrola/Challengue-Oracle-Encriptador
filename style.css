@@ -515,6 +515,7 @@ body{
         padding: 0;
         margin-left: 25px;
         gap: 32px;
+        overflow: auto;
         
     }
     .resultado{
